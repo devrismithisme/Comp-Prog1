@@ -1,5 +1,7 @@
-dict
-name: ["Nacho Briggets"]
-age : ["57"]
-boolean: ["Male"] 
-list: ["Ham", "muffins", "nachos", "fish", "beef"]
+character = {
+    "name": "Nacho Briggets",
+    "age": 57,
+    "isMale": True,
+    "fav_food_list": ['ham', 'muffins', 'nachos', 'fish', 'beef']
+}
+
