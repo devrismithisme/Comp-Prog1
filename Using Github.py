@@ -1,3 +1,4 @@
+
 character = {
     "name": "Nacho Briggets",
     "age": 57,
@@ -5,3 +6,4 @@ character = {
     "fav_food_list": ['ham', 'muffins', 'nachos', 'fish', 'beef']
 }
 
+print(character)
