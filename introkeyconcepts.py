@@ -47,3 +47,31 @@ x = False
 
 print(not x) #you should get the opposite of x
 
+#python expression example for PEMMDAS
+
+y = 10
+x = y + 10 #expression
+m = y >= 10 #expression
+
+z = 7/2 # float division
+t = 7//2 # integer division. 
+print(z)
+
+def my_function():
+    print("I am so great!!")
+
+my_function()
+
+def add(num1, num2): # this is reusable. 
+    print(num1 + num2) 
+
+my_name_is = "Drvi Smit" 
+words = my_name_is.split('')
+print(words)
+
+def subtract(num1,num2):
+    return num1 - num2
+
+difference = subtract (4,2)
+print(difference)
+

@@ -1,0 +1,4 @@
+this_is = "The dog will not live"
+you_are = "my mom is cool"
+
+print("{you_are} and she tells me that {this_is}")
