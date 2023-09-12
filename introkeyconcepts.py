@@ -73,5 +73,6 @@ def subtract(num1,num2):
     return num1 - num2
 
 difference = subtract (4,2)
+
 print(difference)
 
