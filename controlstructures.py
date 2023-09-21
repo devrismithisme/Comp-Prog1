@@ -33,20 +33,42 @@ elif car_color == "Red":
 else:
     print("I just have a bike") #all this is a chain that can be altered based on the car_color and car_make. 
 
-# # # For Loop
-# # for i in range(10): #this will count from 0 through 9, not 10
-# #     print(i)
+# For Loop
+for i in range(10): #this will count from 0 through 9, not 10
+    print(i)
 
-# # for i in range(1, 10): # this gives the for loop a start. it will print 1 through 9
-# #     print(i) 
+for i in range(1, 10): # this gives the for loop a start. it will print 1 through 9
+    print(i) 
 
-# # sports = ["soccer", "basketball", "hockey", "football"]
+sports = ["soccer", "basketball", "hockey", "football"]
 
-# # for item in sports:
-# #     print(item)   # this makes it to where the items on the list is seperated to there own lines
+for item in sports:
+    print(item)   # this makes it to where the items on the list is seperated to there own lines
 
-# # While Loop
-# i = 1 #this is global variable becuse not in function or nested
-# while i < 6:
-#     print("I'm still going") # will print this 5 times
-#     i += 1 
+# While Loop
+i = 1       #this is global variable becuse not in function or nested
+while i < 6:
+    print("I'm still going") # will print this 5 times
+    i += 1
+
+#Nested Loop
+
+#Break: stops the loop if it meets certain criteria
+
+for i in range(50):  # this will print 0 to 49
+    if i > 24:
+        break     # the break will make it stop at the condition which is i > 24
+    else:
+        print(i) 
+
+# Met Condition
+for i in range(50):  
+    if i > 24:    # this is a met condition
+        break    #exit condition
+    else:
+        print(i)   #failed condition because it wasn't printed
+
+
+# Complex condition
+# like the uppercase Blue and the lowercase blue.
+# makes it more complex because of the multuiple "conditions":)
