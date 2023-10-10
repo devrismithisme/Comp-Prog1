@@ -1,21 +1,19 @@
-message1 = int(input("How many fibonacci sequence numbers do you want to see? "))
+greeting1 = int(input("How many fibonacci sequence numbers do you want to see? "))
 
 
 first = 0
 second = 1
-count = 0
 
-for i in message1:
-    print(first, second, end = "")
-
-if message1 <= 0:
-    print("Please enter a positive integer please. ")
-elif message1 == 1:
+if greeting1 < 0:
     print(first)
 else:
-    while count < message1:
-        print(first)
-        sequence = first + second
-        second = sequence
-        count += 1
-        
+    print(first, second, end = " ")
+    for x in range(2, greeting1):
+        third = first + second
+        print(third, end = " ")
+        first = second
+        second = third
+
+
+
+    
