@@ -57,8 +57,15 @@ morse_codedict = {
 }
 
 
-message = input("Please give me a statement to translate into morse code.  ")
+message_to_code = input("Please give me a statement to translate into morse code.  ")
 
-for i in message:
-    print(message.translate(morse_codedict))
-    
+def to_morse_code(message):
+    morse_code = ""
+    for char in message:
+        if char == " ":
+            morse_code += "//"
+        else:
+            morse_code += morse_codedict[char.upper()] + "/"
+    print(morse_code)
+
+to_morse_code(message_to_code)
