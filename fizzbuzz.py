@@ -39,7 +39,10 @@ else:
 
 
 for i in range(1, 101):
-    if i 
+    if i > 1:
+        for x in range (2, int(i/2)+1):
+        
+        
 
 
 
