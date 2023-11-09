@@ -38,17 +38,15 @@ else:
     else:
         print("That is a really long time since you have done programming. Unfortunately it is not soon enough for us to hire you, thank you for coming though. ")
     Q6 = input("According to the amount of experience you have, I believe you are worth, if we hire you, for $25,000 per year. Do you agree? ")
-    if Q6 in "No" or "no":
+    if Q6 in "No" or "no":#(If I ansswer Q6 in something other than "No" or "no", it will not go to the else.)
         print("Really, why?")
     else:
         print("That was a test to see if you would stand up for your abilities. You have failed to see your value and so we cannot hire you. Thank you for coming. Goodbye.")
-        exit()
     Q7 = int(input("(Options: 1. I believe I am worth more than $25,000 a year. 2. You are a big fat jerk for thinking I am not worth more money!) "))
     if Q7 == 1:  
         print("I see.")
     else:
         print("That is very rude and unproffesional. We will not handle such language in this company. This interview is finished.")
-        exit()
     Q8 = input("How much money do you think you are worth? $")
     print(f"We will have to see if you are worth ${Q8}")
     Q9 = input("Are you interested in health insurance? ")
