@@ -1,16 +1,16 @@
 import random
-wordlist = []
-f =open("sowpods.txt","r")
-for I in f:
-    wordlist.append(I)
-print (random.choice(wordlist))         
+with open("sowpods.txt", "r") as f:
+    lines = f.readlines()
+    wordlist = [word for line in lines for word in line.split()]
+    random_word = random.choice(wordlist)
+word = random.choice(wordlist)
 
-
-
+    
 word = random.choice(wordlist)
 letters_guessed = []
 #word.pop()
 print("Welcome to HangMan.")
+
 def hangman():
     Q1 = input("Would you like to play hangman?('y'or 'n') ")
     if Q1 == "y":
@@ -43,15 +43,13 @@ def hangman():
                         if turns == 0:
                             print(f"You loose! The word was {word}")
                             State2 = ("See ya!")
-                            if State2 or State1:
-                                while True:
-                                    print(hangman())
-                            else:
-                                print("Okay, goodbye.")
-                                break
+                            break
     else:
         print("Goodbye then")
         exit()
 
 hangman()
 
+#if State2 or State1:
+#                                while True:
+ #                                   print(hangman())
