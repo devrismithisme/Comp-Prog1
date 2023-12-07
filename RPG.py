@@ -5,18 +5,17 @@ print("You stare blankly at her.")
 print(f"'Well,' she says, 'off with you now! There is no time to waste {line1}! Your adventure begins!")
 
 
-health = 100
+player_health = 100
+enemy_health = 100
 
 import random
 beast_list = ["Cyclops", "Goblin", "Werewolf"]
-
 beast = random.choice(beast_list)
 
-awards_list = ["leash", "goblet", "eye"]
+
 import random
-awards = random.choice(awards_list)
-
-
+awards_list = ["leash", "goblet", "eye"]
+awards = (awards_list)
 
 
 
@@ -40,11 +39,14 @@ def attack_enemy():
             break
 
 
-while health > 0:
+while player_health > 0:
     line2 = input("Press w to walk or i to check your inventory. ")
     if line2 in "i":
-        print(f"This is your inventory {line1}. Your health is {health}.")
+        print(f"This is your inventory {line1}. Your health is {player_health}.")
         if awards in awards_list:
+            print(f"You have a {awards}.")
+        else:
+            print("You have no awards")
             print(f"You have a/ an {awards}.")
     elif line2 in "w":
         for beast in beast_list:
@@ -58,10 +60,9 @@ while health > 0:
                     
                 break
         else:
-            print(line2)
             print("You are walking. ")
     else:
-        print("Please enter 'w' or 'i'. ")
+        print("Please enter 'w' or 'i'. "
     
         
 #if fight_input == "fight":
